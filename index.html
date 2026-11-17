@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameArena · Competiciones de videojuegos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#/" aria-label="GameArena, ir al inicio"><span class="logo-mark">GA</span>GameArena</a>
+    <nav id="nav" aria-label="Principal">
+      <a href="#/" data-s="inicio">Inicio</a>
+      <a href="#/jugadores" data-s="jugadores">Jugadores</a>
+      <a href="#/videojuegos" data-s="videojuegos">Videojuegos</a>
+      <a href="#/torneos" data-s="torneos">Torneos</a>
+      <a href="#/participaciones" data-s="participaciones">Participaciones</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap" tabindex="-1">
+  <nav id="crumbs" class="crumbs" aria-label="Ubicación"></nav>
+  <div id="view"></div>
+</main>
+<footer class="wrap foot">GameArena · Proyecto transversal DAW · Diseño de Interfaces Web UD02</footer>
+<dialog id="dlg"><p id="dlg-t"></p><div class="row end"><button class="btn sec" value="no">Cancelar</button><button class="btn danger" value="si">Eliminar</button></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
